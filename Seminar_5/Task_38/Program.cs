@@ -41,7 +41,7 @@ double Min (double[] array)
 
 Console.Clear();
 Console.WriteLine("Введите числа массива через пробел: ");
-string input = Console.ReadLine();
+string input = Console.ReadLine()!;
 double[] array = GetArrayFromString(input);
 Console.WriteLine(String.Join(", ", array));
 double sum = Max(array) - Min(array);
