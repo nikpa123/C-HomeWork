@@ -39,7 +39,7 @@ double[] GetArithmeticMeanInColumns(int[,] array)
         {
             arithmeticMean[j] += array[i, j];
         }
-        arithmeticMean[j] /= array.GetLength(1);
+        arithmeticMean[j] /= array.GetLength(0);
         arithmeticMean[j] = Math.Round(arithmeticMean[j], 1);
     }
 
